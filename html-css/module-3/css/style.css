@@ -1,0 +1,38 @@
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+    font-size: 0px;
+    padding: 44px 30px 25px 30px;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 422px;
+    display: inline-block;
+    box-sizing: content-box;
+    margin-right: 50px;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    /* font-weight: 400; */
+    
+    
+    }
+.box:last-child{
+    margin-right: 0px;
+}
+h4{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #CECBC6;
+    
+}
+p, h5{
+    color: #606060;
+}
+p{
+    font-size: 14px;
+    font-weight: 200; 
+}
+h5{
+    font-size: 28px;
+}
