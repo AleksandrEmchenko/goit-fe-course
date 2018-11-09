@@ -1,5 +1,5 @@
 .wrapper{
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     font-size: 0px;
     padding: 44px 30px 25px 30px;
@@ -13,10 +13,11 @@
     margin-right: 50px;
     font-size: 16px;
     font-family: 'Playfair Display', serif;
-    /* font-weight: 400; */
-    
-    
-    }
+}
+img {
+    width: 422px;
+    height: 284px;
+}
 .box:last-child{
     margin-right: 0px;
 }
