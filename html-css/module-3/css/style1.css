@@ -32,8 +32,8 @@ header{
     padding-left: 0;
     width: 900px;
     height: 28px;
-    padding: 3em 0;
-    /* line-height: 175px; */
+    padding: 3em 0; /*Не понимаю этого*/
+    /* line-height: 184px; */ 
     
 }
 
@@ -62,16 +62,16 @@ a:focus{color: hsl(0, 30%, 38%);}
 article{
     width: 420px;
     display: inline-block;
-    margin-right: 56px;
+    margin-right: 56px; /*Должно быть 60. Где убрать 4рх инлайнблока?*/
     margin-bottom: 135px;
 }
-article:nth-child(2n){
+article:nth-child(even), .sub-img:nth-child(even){
     margin-right: 0;
 }
-img{
+/* img{
     width: 420px;
     height: 280px;
-}
+} */
 .img-box{
     width: 420px;
     height: 280px;
@@ -80,17 +80,10 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.img1{
-    background-image: url("../img/woman.png");
-    width: 100%;
-}
-
-.img2{
-    background-image: url("../img/coffe.png");
-    width: 100%;
-}
-.img3{background-image: url("../img/girls.png");}
-.img4{background-image: url("../img/boy.png");}
+.img1{background-image: url("../img/woman.jpg");}
+.img2{background-image: url("../img/coffe.jpg");}
+.img3{background-image: url("../img/girls.jpg");}
+.img4{background-image: url("../img/boy.jpg");}
 
 .sub-img{
     font-size: 14px;
@@ -106,9 +99,8 @@ p{
 h5{
     font-size: 28px;
 }
-.btn{
-    width: 164px;
-    height: 58px;
+button{
+    padding: 9px 33px;
     box-sizing: border-box;
     border: 1px solid #62626261;
     background-color: #DDDCD6; 
@@ -118,6 +110,9 @@ h5{
     font-size: 20px;
     color: #626262;
     text-align: center;
-    line-height: 58px;
+    line-height: 40px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
-.btn:hover{color: hsl(0, 30%, 38%);}
+button:hover{color: hsl(0, 30%, 38%);}
