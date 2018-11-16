@@ -69,11 +69,13 @@ article{
 article:nth-child(even), .sub-img:nth-child(even){
     margin-right: 0;
 }
-/* img{
-    width: 420px;
-    height: 280px;
-} */
-.img-box{
+img{
+    display:block;
+    max-width: 100%;
+    /* height: auto; */
+    background-size: cover;
+}
+/* .img-box{
     width: 420px;
     height: 280px;
     background-color: #626262;
@@ -84,7 +86,7 @@ article:nth-child(even), .sub-img:nth-child(even){
 .img1{background-image: url("../img/woman.jpg");}
 .img2{background-image: url("../img/coffe.jpg");}
 .img3{background-image: url("../img/girls.jpg");}
-.img4{background-image: url("../img/boy.jpg");}
+.img4{background-image: url("../img/boy.jpg");} */
 
 .sub-img{
     font-size: 14px;
