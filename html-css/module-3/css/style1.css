@@ -25,6 +25,7 @@ header{
 .wrapper{
     width: 900px;
     margin: 0 auto;
+    font-size: 0;
 }
 
 .site-navigation{
@@ -62,7 +63,7 @@ a:focus{color: hsl(0, 30%, 38%);}
 article{
     width: 420px;
     display: inline-block;
-    margin-right: 56px; /*Должно быть 60. Где убрать 4рх инлайнблока?*/
+    margin-right: 60px; 
     margin-bottom: 135px;
 }
 article:nth-child(even), .sub-img:nth-child(even){
@@ -89,12 +90,15 @@ article:nth-child(even), .sub-img:nth-child(even){
     font-size: 14px;
     text-transform: uppercase;
 }
-p, h2{
+h2{
+    font-size: 30px;
+    font-weight: 100; 
     color: #626262;
 }
 p{
     font-size: 14px;
     font-weight: 200; 
+    color: #626262;
 }
 h5{
     font-size: 28px;
