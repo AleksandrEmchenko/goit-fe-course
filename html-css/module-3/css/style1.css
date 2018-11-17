@@ -13,86 +13,94 @@ html, body{
 body{
     color: #626262;
     font-family: "Playfair Display", serif;
-    font-size: 14px;
+    font-size: 0px;
 }
 
 header{
     width: 900px;
-    height: 184px;
+    height: 190px;
     text-align: center;
 }
 
 .wrapper{
     width: 900px;
     margin: 0 auto;
-    font-size: 0;
 }
 
 .site-navigation{
     display: inline-block;
-    padding-left: 0;
-    width: 900px;
-    height: 28px;
-    padding: 3em 0; /*Не понимаю этого*/
-    /* line-height: 184px; */ 
-    
-}
-
-.site-navigation, ul{
+    margin: 0;
+    padding: 0;
+    padding-top: 75px;
     list-style: none;
-    font-size: 16px;
+    font-size: 16px; 
 }
 
-.site-navigation li{
-    display: inline-block;
-    /* margin-right: 102px; */
-}
-.site-navigation li:first-child{margin-right: 102px;}
-.site-navigation li:nth-child(2){margin-right: 104px;}
-.site-navigation li:nth-child(3){margin-right: 95px;}
-
-a{
+.site-navigation a{
     text-decoration: none;
     text-transform: uppercase;
     color: hsl(0, 0%, 38%);
     letter-spacing: -1px;
 }
+
 a:hover{color: hsl(0, 30%, 38%);}
 a:focus{color: hsl(0, 30%, 38%);}
 
-article{
+.site-navigation li{
+    display: inline-block;
+}
+.site-navigation li:first-child{margin-right: 102px;}
+.site-navigation li:nth-child(2){margin-right: 104px;}
+.site-navigation li:nth-child(3){margin-right: 95px;}
+
+.main{
+    padding: 0;
+    padding-bottom: 20px;
+    
+}
+ul{
+    font-size: 0;
+    padding: 0;
+}
+.nav-link{
+    display: block;
+    font-size: 14px;
+}
+
+
+
+h1{
+    visibility: hidden;
+}
+.li-section{
     width: 420px;
     display: inline-block;
     margin-right: 60px; 
     margin-bottom: 135px;
+    
 }
-article:nth-child(even), .sub-img:nth-child(even){
+.li-section:nth-child(even){
     margin-right: 0;
 }
+.li-section:nth-last-child(2), .li-section:last-child{
+    margin-bottom: 54px;
+}
+
 img{
     display:block;
     max-width: 100%;
     /* height: auto; */
     background-size: cover;
+    margin-bottom: 30px;
 }
-/* .img-box{
-    width: 420px;
-    height: 280px;
-    background-color: #626262;
-    box-sizing: border-box;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.img1{background-image: url("../img/woman.jpg");}
-.img2{background-image: url("../img/coffe.jpg");}
-.img3{background-image: url("../img/girls.jpg");}
-.img4{background-image: url("../img/boy.jpg");} */
 
 .sub-img{
     font-size: 14px;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 h2{
+    
     font-size: 30px;
     font-weight: 100; 
     color: #626262;
@@ -101,10 +109,13 @@ p{
     font-size: 14px;
     font-weight: 200; 
     color: #626262;
+    margin: 0;
+    margin-bottom: 30px;
 }
-h5{
-    font-size: 28px;
-}
+.text{
+    margin: 0;
+    }
+
 button{
     padding: 9px 33px;
     box-sizing: border-box;
@@ -119,6 +130,6 @@ button{
     line-height: 40px;
     display: block;
     margin: 0 auto;
-    margin-bottom: 20px;
+    
 }
 button:hover{color: hsl(0, 30%, 38%);}
