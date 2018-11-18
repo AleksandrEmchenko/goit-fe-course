@@ -86,13 +86,6 @@ a{
             /* /HEADER */
 
             /* MAIN */
-img{
-    display: block;
-    width: 100%;
-    height: auto;
-        
-}
-
 h2{
     font-size: 38px;
     letter-spacing: -1px;
@@ -118,18 +111,30 @@ h2::after{
 
 section{
     margin: 0;
-    margin-bottom: 100px;
+    margin-bottom: 84px;
 }
 .product{
     display: inline-block;
     margin-right: 30px;
     margin-bottom: 30px;
+    height: auto;
+    
 }
 
 .product:nth-child(4n){
     margin-right: 0;
 }
 
+.product:nth-child(n+5){
+    margin-bottom: 0;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+        
+}
 .product-box{
     font-size: 0;
     width: 255px;
@@ -144,12 +149,14 @@ section{
     box-sizing: border-box;
     width: 255px;
     height: 282px;
+    line-height: 282px;
     margin: 0;
     padding: 0;
     /* display: inline-block; */
     background: #E9F0FD;
        
 }
+
 
 .name-product{
     display: inline-block;
