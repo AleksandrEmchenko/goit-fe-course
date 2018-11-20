@@ -25,6 +25,7 @@ header{
 .wrapper{
     width: 900px;
     margin: 0 auto;
+    font-size: 0; 
 }
 
 .site-navigation{
@@ -33,7 +34,7 @@ header{
     padding: 0;
     padding-top: 75px;
     list-style: none;
-    font-size: 16px; 
+    font-size: 0; 
 }
 
 .site-navigation a{
@@ -61,35 +62,48 @@ a:focus{color: hsl(0, 30%, 38%);}
 ul{
     font-size: 0;
     padding: 0;
+    margin-bottom: 52px;
 }
 .nav-link{
     display: block;
     font-size: 14px;
 }
 
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
 
-
-h1{
+/* h1{
     visibility: hidden;
-}
+} */
 .li-section{
     width: 420px;
     display: inline-block;
     margin-right: 60px; 
-    margin-bottom: 135px;
+    margin-bottom: 136px;
     
 }
 .li-section:nth-child(even){
     margin-right: 0;
 }
-.li-section:nth-last-child(2), .li-section:last-child{
-    margin-bottom: 54px;
-}
+.li-section:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+    }
+
 
 img{
     display:block;
-    max-width: 100%;
-    /* height: auto; */
+    width: 100%;
+    height: auto;
     background-size: cover;
     margin-bottom: 30px;
 }
@@ -104,6 +118,7 @@ h2{
     font-size: 30px;
     font-weight: 100; 
     color: #626262;
+    margin-bottom: 28px;
 }
 p{
     font-size: 14px;
@@ -111,6 +126,7 @@ p{
     color: #626262;
     margin: 0;
     margin-bottom: 30px;
+    line-height: 1.8;
 }
 .text{
     margin: 0;

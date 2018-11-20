@@ -7,25 +7,31 @@ html{
 }
 
 body{
-    font-size: 0;
     font-family: 'Open Sans', sans-serif;
     color: #555252;
     margin: 0;
     padding: 0;
 }
+
             /* HEADER */
+
+.clearfix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
 header{
     height: 96px;
-    /* background-color: aquamarine; */
 }
 
 .wrapper{
-    width: 1110px;
+    width: 1140px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .logo{
-    display: inline-block;
     margin: 0;
     padding: 0;
     text-transform: uppercase;
@@ -33,7 +39,8 @@ header{
     letter-spacing: -1px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    vertical-align: middle;
+    line-height: 96px;
+    float: left;
 }
 
 .logo::first-letter{
@@ -42,24 +49,21 @@ header{
 }
 
 ul{
-    font-size: 0;
     padding: 0;
     margin: 0;
 }
 
 .sait-navigation{
-    width: 1000px;
+    width: 486px;
     height: inherit;
-    display: inline-block;
     margin: 0;
     padding: 0;
     font-size: 14px;
     text-transform: uppercase;
     list-style: none;
     font-weight: bold;
-    text-align: right;
-    /* vertical-align: middle; */
     line-height: 96px;
+    float: right;
 }
 
 a{
@@ -73,10 +77,9 @@ a{
 }
 
 .sait-navigation li{
-    display: inline-block;
-    /* text-align: right; */
     margin-right: 34px;
     height: inherit;
+    float: left;
 }
 
 .sait-navigation li:last-child{
@@ -86,6 +89,7 @@ a{
             /* /HEADER */
 
             /* MAIN */
+
 h2{
     font-size: 38px;
     letter-spacing: -1px;
@@ -95,6 +99,7 @@ h2{
     text-align: center;
     text-transform: uppercase;
 }
+
 h1{
     visibility: hidden;
 }
@@ -113,12 +118,13 @@ section{
     margin: 0;
     margin-bottom: 84px;
 }
+
 .product{
-    display: inline-block;
     margin-right: 30px;
     margin-bottom: 30px;
     height: auto;
-    
+    float: left;
+    list-style: none;
 }
 
 .product:nth-child(4n){
@@ -133,16 +139,15 @@ img{
     display: block;
     width: 100%;
     height: auto;
-        
 }
+
 .product-box{
-    font-size: 0;
     width: 255px;
     height: 322px;
     margin: 0;
     padding: 0;
     background-color: #E9F0FD;
-       
+    float: left;
 }
 
 .img-box{
@@ -152,32 +157,25 @@ img{
     line-height: 282px;
     margin: 0;
     padding: 0;
-    /* display: inline-block; */
     background: #E9F0FD;
-       
 }
 
-
 .name-product{
-    display: inline-block;
     box-sizing: border-box;
     width: 205px;
     height: 40px;
     margin: 0;
     padding: 0;
     background-color: #323232;
-    /* position: absolute;
-    bottom:0px;
-    left:0px; */
     text-transform: uppercase;
     font-size: 14px;
     color: #fff;
     padding-left: 14px;
     line-height: 40px;
+    float: left;
 }
 
 .price-product{
-    display: inline-block;
     width: 50px;
     height: 40px;
     margin: 0;
@@ -188,14 +186,15 @@ img{
     color: #fff;
     text-align: center;
     line-height: 40px;
+    float: right;
 }
 
 .latest-news{
     width: 350px;
-    display: inline-block;
     margin-right: 30px;
     margin-bottom: 15px;
-    font-size: 0;
+    list-style: none;
+    float: left;
 }
 
 .latest-news:last-child{
@@ -218,33 +217,24 @@ img{
     color: #555252;
     font-family: "Open Sans";
     font-weight: bold;
-    /* margin-bottom: 16px; */
 }
 
 .name-news::after{
     content: "";
     display: block;
     width: 136px;
-    /* margin: 0 auto;  */
     border-bottom: 4px solid #1abc9c;
     margin-top: 16px;
-    /* margin-bottom: 32px; */
 }
 
 .text-news{
     width: 350px;
-    /* height: 260px; */
     font-size: 14px;
     letter-spacing: -0.1px;
     line-height: 26px;
     color: #555252;
     font-family: "Open Sans";
     margin-top: 32px;
-    
-}
-.news{
-    font-size: 0;
-    
 }
 
 button{
