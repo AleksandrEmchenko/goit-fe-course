@@ -16,12 +16,7 @@ body{
     font-size: 0px;
 }
 
-header{
-    width: 900px;
-    /* height: 166px; */
-    text-align: center;
-    margin-bottom: 24px;
-}
+
 
 .wrapper{
     width: 900px;
@@ -29,9 +24,23 @@ header{
     font-size: 0; 
 }
 
+header{
+    width: 900px;
+    /* height: 166px; */
+    text-align: center;
+    /* margin-bottom: 24px; */
+    
+}
+
+.margin{
+    margin-bottom: 102px;
+}
+
+
 .site-navigation{
     display: block;
-    margin-bottom: 102px;
+    margin: 0;   
+    /* margin-bottom: 102px; */
     padding: 0;
     padding-top: 75px;
     /* padding-bottom: 24px; */
@@ -61,6 +70,7 @@ a:focus{color: hsl(0, 30%, 38%);}
 .main{
     padding: 0;
     padding-bottom: 20px;
+    /* padding-top: 102px; */
     
 }
 ul{
@@ -122,7 +132,8 @@ h2{
     font-size: 30px;
     font-weight: 100; 
     color: #626262;
-    /* margin-bottom: 28px; */
+    margin: 0;
+    margin-bottom: 28px;
 }
 p{
     font-size: 14px;
