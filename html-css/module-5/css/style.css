@@ -11,6 +11,7 @@ body{
     color: #555252;
     margin: 0;
     padding: 0;
+    padding-bottom: 100px;
 }
 
             /*  HEADER */
@@ -21,19 +22,22 @@ body{
     clear: both;
 }
 
-header{
+nav{
+    display: block;
     height: 96px;
 }
 
 .wrapper{
     width: 1140px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0;
 }
+
 .bigwrapper{
     width: 1600px;
     margin: 0 auto;
 }
+
 .logo{
     display: block;
     margin: 0;
@@ -69,9 +73,11 @@ ul{
     line-height: 96px;
     float: right;
 }
+
 .menu-item{
     display: block;
 }
+
 a{
     text-decoration: none;
     color: #000;
@@ -92,88 +98,59 @@ a{
     margin-right: 0;
 }
 
+/*          /HEADER         */
+/*          слайдер         */
+
 .slider{
+    /* width: 1600px; */
     height: 600px;
+    margin: 0 auto;
+    margin-bottom: 102px;
+}
+
+.slider-content{
+    width: 1140px;
+    height: 600px;
+    position: relative;
+}
+
+.slides{
     background-image: url(../img/slide4.jpg);
-    margin: 0 auto;
-    margin-bottom: 88px;
-    text-transform: uppercase;
-    color: #fff;
-    
-    
-}
-
-
-.wrapper-text-slider{
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    /* height: 106px; */
-    
-    /* float: left; */
-    margin: 0 auto;
     /* width: 100%; */
-    /* padding: 0 80px; */
-    
+    width: 1600px;
+    height: 600px;
+    /* object-fit: cover; */
+    /* margin: 0; */
+    /* padding: 0; */
+    margin-left: -245px; /*забавный костыль*/
+}  
+.slides li{list-style: none;}
 
-}
-
-.wrapper-text-slider::before{
-    display: inline-block;
-    content: "\003C";
+.slider-ctrl{
+    position: absolute;
+    box-sizing: border-box;
+    width: 102px;
+    height: 102px;
     margin: 0;
     padding: 0;
     font-size: 40px;
     color: #fff;
-    padding: 26px 40px;
     background: #4F9D8B;
-    
-    margin-right: 80px;
-  
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
-.wrapper-text-slider::after{
-    display: inline-block;
-    content: "\003E";
-    margin: 0;
-    padding: 0;
-    font-size: 40px;
-    color: #fff;
-    padding: 36px 42px;
-    background: #4F9D8B;
-    
-    margin-left: 80px;
-    
-    
+.slider-ctrl-prev{left: 0;}
+.slider-ctrl-next{right: 0;}
+.slider-ctrl:focus{
+    color: #000;
+    background: hsl(166, 33%, 70%);
 }
 
-
-.name-slider1{
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    font-size: 60px;
-    font-weight: bold;
-    text-align: center;
-    /* float: left; */
-    letter-spacing: -2px;
-    margin-bottom: 14px;
-    width: 748px;
-}
-
-.name-slider2{
-    display: inline-block;
-    font-size: 26px;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    /* float: left; */
-    letter-spacing: -1px;
-}
-            /* /HEADER */
-
-            /* old MAIN */
-
+/*          конец слайдера          */
+ 
 .name-section{
     display: block;
     font-size: 38px;
@@ -185,10 +162,7 @@ a{
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 40px;
-    
 }
-
-
 
 .name-section::after{
     content: "";
@@ -197,7 +171,6 @@ a{
     margin: 0 auto; 
     border-bottom: 4px solid #1ABC9C;
     padding-top: 24px;
-    
 }
 
 section{
@@ -217,16 +190,12 @@ section{
 .product:nth-child(4n){
     margin-right: 0;
 }
+
 .product:hover{
     box-sizing: content-box;
-    /* padding: 12px; */
     background: #737373;
     opacity: 0.7;
-    /* border: 12px solid #ff0; */
 }
-/* .product:nth-child(n + 5){
-    margin-bottom: 0;
-} */
 
 img{
     width: 100%;
@@ -235,12 +204,94 @@ img{
 }
 
 .product-box{
+    position: relative;
     width: 255px;
     height: 322px;
     margin: 0;
     padding: 0;
     float: left;
 }
+
+/*начало затемнения карточки при наведении*/
+.overley{
+    box-sizing: border-box;
+    position: absolute;
+    width: 255px;
+    height: 282px;
+    opacity: 0;
+}
+
+.overley-info{
+    position: absolute;
+    width: 166px;
+    height: 108px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heart, .arrow, .clock{
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+
+.heart{
+    background-image: url(../icons/heart.png);
+}
+
+.arrow{background-image: url(../icons/arrows.png);}
+.clock{
+    background-image: url(../icons/clock.png);
+    margin-right: 0;
+}
+
+.basket{
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    border: 2px solid #fff;
+    float: left;
+    background-color: #000;
+    opacity: 1;
+    
+}
+
+.heart:hover, .arrow:hover, .clock:hover, .basket:hover, .basket-add:hover{
+    background-color: #1ABC9C;
+    cursor: pointer;
+}
+
+.basket-img{
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    margin: 0;padding: 0;
+    background-image: url(../icons/basket.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+
+.basket-add{
+    float: right;
+    padding: 13px 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity: 1;
+    color: #fff;
+}
+
+/* .basket-add:hover{
+    cursor: pointer;
+} */
 .product-box:hover > .name-product{
     background-color: #1ABC9C;
 }
@@ -248,6 +299,17 @@ img{
 .product-box:hover > .price-product{
     background-color: #7FD9C7;
 }
+
+.product-box:hover .overley{
+    position: absolute;
+    width: 235px;
+    height: 260px;
+    top:10px;
+    left: 10px;
+    background: #282828;
+    opacity: 0.9;
+}
+/* конец затемнение карточки при наведении*/
 
 .img-box{
     box-sizing: border-box;
@@ -287,29 +349,30 @@ img{
     line-height: 40px;
     float: right;
 }
-
+/*          footer          */
 .ftr{
-    
+    display: block;
+    /* width: 1140px; */
+    height: 88px;
     margin: 0;
     padding: 0;
     margin: 0 auto;
-    display: block;
-    height: 88px;
+    
     background: #323232;
 }
+
 .ftr a{
     color:  #1ABC9C;
 }
 
-
 .sub-ftr{
-    width: 350px;
     display: block;
+    /* width: 1140px; */
     margin: 0 auto;
-    padding-top: 32px; /*ну не могу больше ничего придумать для выравнивания*/
-    
-    
+    text-align: center;
+    padding-top: 32px; /*проблему выравнивания так и не решил */
 }
+
 .ftr-text{
     display: inline-block;
     text-transform: capitalize;
