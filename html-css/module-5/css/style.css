@@ -123,8 +123,34 @@ a{
     /* margin: 0; */
     /* padding: 0; */
     margin-left: -245px; /*забавный костыль*/
+    position: relative;
 }  
 .slides li{list-style: none;}
+
+.slider-text{
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fff;
+}
+
+.slider-h2{
+    margin: 0;
+    padding: 0;
+    font-size: 58px;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+}
+.slider-p{
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
 
 .slider-ctrl{
     position: absolute;
@@ -139,6 +165,7 @@ a{
     border: none;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 2;
     cursor: pointer;
 }
 
@@ -148,6 +175,7 @@ a{
     color: #000;
     background: hsl(166, 33%, 70%);
 }
+
 
 /*          конец слайдера          */
  
