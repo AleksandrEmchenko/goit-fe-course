@@ -9,8 +9,8 @@
     <title>Mart</title>
 </head>
 <body>
-    <header class="">
-        <nav class=" wrapper clearfix">
+    <header class="hdr">
+        <nav class="nav-menu wrapper clearfix">
         <a href="index.html" class="logo">mart</a>
         <ul class="sait-navigation clearfix">
             <li class="menu-item"><a href="#">home</a></li>
@@ -21,44 +21,56 @@
             <li class="menu-item"><a href="#">contact us</a></li>
         </ul>
         </nav>
-        <div class="slider">
-                <div class="slider-content wrapper">
-                    <button class="wrapper slider-ctrl slider-ctrl-prev">&lt;</button>
-                    <button class="wrapper slider-ctrl slider-ctrl-next">&gt;</button>
-                    <div class="slides">
-                        <ul>
-                            <li>
-                                <div class="slider-text">
-                                    <h2 class="slider-h2">AFFORDABLE PARIS TOURS</h2>
-                                    <p class="slider-p">CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
-                                </div>
-                                    </div><!-- <img class="slides"src="img/slide4.jpg" alt="image"> -->
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>    
+           
     </header>
     
-    <main class="wrapper">
+    <main>
         
-        <section>
+        <div class="slider">
+            <div class="slider-content wrapper">
+                <button class="wrapper slider-ctrl slider-ctrl-prev"></button>
+                <button class="wrapper slider-ctrl slider-ctrl-next"></button>
+                <div class="slides">
+                    <ul class="slider-text">
+                        <li>
+                            <h2 class="slider-h2">affordable paris tours</h2>
+                            <p class="slider-p">city tours / tours tickets / tour guides</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+
+
+        <section class="m-section">
+            <div class="wrapper">
             <h2 class="name-section">new collection</h2>
             <ul class="clearfix">
                 <li class="product">
                     <article class="product-box">
                         <div class="overley">
                             <div class="overley-info clearfix">
-                                <div class="heart"></div>
+                                <ul>
+                                    <li><a href="#" class="heart"><span class="visually-hidden"></span></a></li>
+                                    <li><a href="#" class="arrow"><span class="visually-hidden"></span></a></li>
+                                    <li><a href="#" class="clock"><span class="visually-hidden"></span></a></li>
+                                    <li><a href="#" ><span class="visually-hidden"></span>
+                                                <div class="basket">
+                                                <div class="basket-img"></div>  
+                                                <div class="basket-add">add to cart</div>
+                                                </div>
+                                        </a></li>
+                                </ul>
+                                <!-- <div class="heart"></div>
                                 <div class="arrow"></div>
                                 <div class="clock"></div>
                                 <div class="basket">
-                                  <div class="basket-img"></div>  
-                                  <div class="basket-add">add to cart</div>
-                                </div>
+                                <div class="basket-img"></div>  
+                                <div class="basket-add">add to cart</div>
+                                </div> -->
                             </div>
                         </div>
-                        <img class="img-box" src="./img/category-1.jpg" alt="product">
+                        <img class="img-box" src="./img/category-1.jpg" alt="product" width="255" height="282">
                         <h3 class="name-product">blue tshirt</h3>
                         <p class="price-product">$26</p>
                     </article>
@@ -67,16 +79,21 @@
                         <article class="product-box">
                             <div class="overley">
                                 <div class="overley-info clearfix">
-                                    <div class="heart"></div>
-                                    <div class="arrow"></div>
-                                    <div class="clock"></div>
-                                    <div class="basket">
-                                      <div class="basket-img"></div>  
-                                      <div class="basket-add">add to cart</div>
-                                    </div>
+                                    <ul>
+                                        <li><a href="#" class="heart"><span class="visually-hidden"></span></a></li>
+                                        <li><a href="#" class="arrow"><span class="visually-hidden"></span></a></li>
+                                        <li><a href="#" class="clock"><span class="visually-hidden"></span></a></li>
+                                        <li><a href="#" ><span class="visually-hidden"></span>
+                                                    <div class="basket">
+                                                    <div class="basket-img"></div>  
+                                                    <div class="basket-add">add to cart</div>
+                                                    </div>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <img class="img-box" src="./img/category-2.jpg" alt="product">
+                            <img class="img-box" src="./img/category-2.jpg" alt="product" width="255" height="282">
                             <h3 class="name-product">blue tshirt</h3>
                             <p class="price-product">$26</p>
                         </article>
@@ -85,16 +102,21 @@
                             <article class="product-box">
                                 <div class="overley">
                                     <div class="overley-info clearfix">
-                                        <div class="heart"></div>
-                                        <div class="arrow"></div>
-                                        <div class="clock"></div>
-                                        <div class="basket">
-                                          <div class="basket-img"></div>  
-                                          <div class="basket-add">add to cart</div>
-                                        </div>
+                                        <ul>
+                                            <li><a href="#" class="heart"><span class="visually-hidden"></span></a></li>
+                                            <li><a href="#" class="arrow"><span class="visually-hidden"></span></a></li>
+                                            <li><a href="#" class="clock"><span class="visually-hidden"></span></a></li>
+                                            <li><a href="#" ><span class="visually-hidden"></span>
+                                                        <div class="basket">
+                                                        <div class="basket-img"></div>  
+                                                        <div class="basket-add">add to cart</div>
+                                                        </div>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <img class="img-box" src="./img/category-3.jpg" alt="product">
+                                <img class="img-box" src="./img/category-3.jpg" alt="product" width="255" height="282">
                                 <h3 class="name-product">blue tshirt</h3>
                                 <p class="price-product">$26</p>
                             </article>
@@ -103,26 +125,32 @@
                                 <article class="product-box">
                                     <div class="overley">
                                         <div class="overley-info clearfix">
-                                            <div class="heart"></div>
-                                            <div class="arrow"></div>
-                                            <div class="clock"></div>
-                                            <div class="basket">
-                                              <div class="basket-img"></div>  
-                                              <div class="basket-add">add to cart</div>
-                                            </div>
+                                            <ul>
+                                                <li><a href="#" class="heart"><span class="visually-hidden"></span></a></li>
+                                                <li><a href="#" class="arrow"><span class="visually-hidden"></span></a></li>
+                                                <li><a href="#" class="clock"><span class="visually-hidden"></span></a></li>
+                                                <li><a href="#" ><span class="visually-hidden"></span>
+                                                            <div class="basket">
+                                                            <div class="basket-img"></div>  
+                                                            <div class="basket-add">add to cart</div>
+                                                            </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <img class="img-box" src="./img/category-4.jpg" alt="product">
+                                    <img class="img-box" src="./img/category-4.jpg" alt="product" width="255" height="282">
                                     <h3 class="name-product">blue tshirt</h3>
                                     <p class="price-product">$26</p>
                                 </article>
-                            </li>           
+                            </li> 
+        </ul>  
+    </div>
+        </section>        
     </main>
-    <footer class="ftr bigwrapper">
-        <div class="sub-ftr wrapper">
+    <footer class="ftr clearfix">
         <p class="ftr-text t1">all rights reserved &copy; dokan</p>
         <p class="ftr-text t2">designed <a href="#">ThemenGraph</a></p>
-        </div>
     </footer>
 </body>
 </html>
