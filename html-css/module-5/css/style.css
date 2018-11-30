@@ -101,9 +101,10 @@ a{
 /*          /HEADER         */
 /*          слайдер         */
 
-.slider{
+.slid-e{
     height: 600px;
-    margin: 0 auto;
+    
+    /* margin: 0 auto; */
     background-image: url(../img/slide4.jpg);
     position: relative;
     background-size: cover;
@@ -114,6 +115,7 @@ a{
 
 .slider-content{
     position: relative;
+    height: 600px;
 }
 
 /* .slides{
@@ -123,7 +125,7 @@ a{
     margin-left: -245px; забавный костыль
     position: relative;
 }   */
-.slides li{list-style: none;}
+/* .slides li{list-style: none;} */
 
 .slider-text{
     position: absolute;
@@ -132,6 +134,7 @@ a{
     transform: translate(-50%, -50%);
     z-index: 1;
     color: #fff;
+    list-style: none;
 }
 
 .slider-h2{
@@ -178,12 +181,13 @@ a{
     background-image: url(../icons/next.png);
 }
 
-.slider-ctrl:focus{
+/* .slider-ctrl:focus{
     color: #000;
     background: hsl(166, 33%, 70%);
     opacity: 0.1;
-}
-
+} */
+.slider-ctrl:hover{
+    opacity: 0.651;}
 
 /*          конец слайдера          */
  
@@ -218,7 +222,7 @@ a{
 .product{
     width: 255px;
     margin-right: 30px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     height: auto;
     float: left;
     list-style: none;
@@ -242,11 +246,11 @@ img{
 
 .product-box{
     position: relative;
-    width: 255px;
+    /* width: 255px;
     height: 322px;
     margin: 0;
     padding: 0;
-    float: left;
+    float: left; */
     
 }
 
@@ -254,26 +258,37 @@ img{
 .overley{
     box-sizing: border-box;
     position: absolute;
-    width: 255px;
+    width: 100%;
     height: 282px;
     opacity: 0;
+    top: 0;left: 0;
+    border: 10px solid rgba(255, 255, 255, 0.7);
+   background-color: rgba(0, 0, 0, 0.549);
+   cursor: pointer;
 }
 
-.overley-info{
+/* .overley-info{
     position: absolute;
     width: 166px;
     height: 108px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.heart, .arrow, .clock{
+} */
+.product-list-actions {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+ }
+/* .heart, .arrow, .clock{ */
     /* box-sizing: border-box; */
     /* display: inline-block; */
     /* float: left; */
     /* opacity: 1; */
-}
+/* } */
 
 .heart{
     background-image: url(../icons/heart.png);
@@ -352,6 +367,9 @@ img{
     float: left;
 }
 
+.overley-info li:nth-child(3){
+    margin-right: 0;
+}
 .overley-info a{
     display: block;
     width: 50px;
@@ -416,6 +434,13 @@ img{
     background: #323232;
     text-transform: capitalize;
     margin: 0 auto;
+}
+
+.ftr-p{
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    
 }
 
 .ftr-text{
