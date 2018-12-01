@@ -118,15 +118,6 @@ a{
     height: 600px;
 }
 
-/* .slides{
-    background-image: url(../img/slide4.jpg);
-    width: 1600px;
-    height: 600px;
-    margin-left: -245px; забавный костыль
-    position: relative;
-}   */
-/* .slides li{list-style: none;} */
-
 .slider-text{
     position: absolute;
     top: 50%;
@@ -181,11 +172,6 @@ a{
     background-image: url(../icons/next.png);
 }
 
-/* .slider-ctrl:focus{
-    color: #000;
-    background: hsl(166, 33%, 70%);
-    opacity: 0.1;
-} */
 .slider-ctrl:hover{
     opacity: 0.651;}
 
@@ -222,7 +208,6 @@ a{
 .product{
     width: 255px;
     margin-right: 30px;
-    /* margin-bottom: 20px; */
     height: auto;
     float: left;
     list-style: none;
@@ -246,12 +231,6 @@ img{
 
 .product-box{
     position: relative;
-    /* width: 255px;
-    height: 322px;
-    margin: 0;
-    padding: 0;
-    float: left; */
-    
 }
 
 /*начало затемнения карточки при наведении*/
@@ -267,14 +246,7 @@ img{
    cursor: pointer;
 }
 
-/* .overley-info{
-    position: absolute;
-    width: 166px;
-    height: 108px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
+
 .product-list-actions {
     position: absolute;
     top: 50%;
@@ -283,12 +255,6 @@ img{
     padding: 0;
     margin: 0;
  }
-/* .heart, .arrow, .clock{ */
-    /* box-sizing: border-box; */
-    /* display: inline-block; */
-    /* float: left; */
-    /* opacity: 1; */
-/* } */
 
 .heart{
     background-image: url(../icons/heart.png);
@@ -301,44 +267,19 @@ img{
     margin-right: 0;
 }
 
-.basket{
+.add-to-cart{
     box-sizing: border-box;
     width: 166px;
     height: 50px;
     border: 1px solid #fff;
-    float: left;
+    display: block;
     background-color: #000;
     opacity: 1;
-    
-}
-.basket:hover{
-    border: 1px solid rgb(26, 188, 156);
 }
 
-.heart:hover, .arrow:hover, .clock:hover, .basket:hover, .basket-add:hover{
+.heart:hover, .arrow:hover, .clock:hover, .add-to-cart:hover{
     background-color: #1ABC9C;
-    cursor: pointer;
-}
-
-.basket-img{
-    display: inline-block;
-    border: none;
-    width: 46px;
-    height: 46px;
-    margin: 0;padding: 0;
-    background-image: url(../icons/basket.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 1;
-}
-
-.basket-add{
-    float: right;
-    padding: 13px 10px;
-    font-size: 14px;
-    text-transform: uppercase;
-    opacity: 1;
-    color: #fff;
+    border: 1px solid rgb(26, 188, 156);
 }
 
 .product-box:hover > .name-product{
@@ -351,26 +292,37 @@ img{
 
 .product-box:hover .overley{
     position: absolute;
-    /* width: 235px;
-    height: 260px; */
-    /* top:10px;
-    left: 10px; */
     background: #282828;
     opacity: 0.9;
+}
+.product-list-actions:hover .overley {
+    opacity: 1;
+}
+
+.product-list-actions .add-to-cart {
+    background-position: 10% 50%, 80% 50%;
+    background-color: #323232;
+    border: 1px solid #fff;
+    width: 166px;
 }
 
 .overley ul {list-style: none;}
 .product-list-actions li{
-    /* margin: 0;  */
-    /* padding: 0; */
     margin-right: 8px;
     margin-bottom: 8px;
     float: left;
 }
 
-.product-list-actions li:nth-child(3){
-    margin-right: 0;
+.add-to-cart{
+    background-image: url(../icons/basket.png),
+    url(../icons/add-to-cart.png);
+    background-repeat: no-repeat;
 }
+.add-to-cart:hover{
+    border: 1px solid rgb(26, 188, 156);
+    background-color: #1ABC9C;
+}
+
 .overley a{
     display: block;
     width: 50px;
@@ -381,10 +333,6 @@ img{
     background-repeat: no-repeat;
     background-position: center;
 }
-
-/* .overley-info a:hover{
-    border: none; 
-} */
 
 /* конец затемнения карточки при наведении*/
 
