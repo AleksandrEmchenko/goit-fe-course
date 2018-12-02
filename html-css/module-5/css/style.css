@@ -1,4 +1,4 @@
-html, .heart, .arrow, .clock{
+html{
     box-sizing: border-box;
 }
 
@@ -74,6 +74,10 @@ ul{
 }
 
 .menu-item{
+    display: block;
+}
+
+.menu-item a{
     display: block;
 }
 
@@ -220,7 +224,7 @@ a{
 .product:hover{
     box-sizing: content-box;
     background: #737373;
-    opacity: 0.7;
+    opacity: 1;
 }
 
 img{
@@ -378,6 +382,7 @@ img{
 
 .ftr{
     display: block;
+    /* width: 100%; */
     height: 88px;
     margin: 0;
     padding: 36px 0;
