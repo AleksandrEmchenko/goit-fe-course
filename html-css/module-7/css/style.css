@@ -1,0 +1,213 @@
+html {
+    box-sizing: border-box;
+}
+
+    *,
+    *::before,
+    *::after {
+    box-sizing: inherit;
+}
+
+    *{
+    margin: 0;padding: 0;
+}
+
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.wrapper{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.hdr{
+    margin-bottom: 60px;
+    padding: 50px 0;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: block;
+    text-decoration: none;
+    font-family: "Charmonman";
+    font-weight: bold;
+    color: #fdd135;
+    text-transform: capitalize;
+    font-size: 26px;
+}
+
+.sait-navigation{
+    display: block;
+    list-style: none;
+    display: flex;
+    width: 484px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.sait-navigation-item a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    /* line-height: 41px; */
+    color: #222222;
+    font-family: "Montserrat";
+}
+
+.sait-navigation-item a:hover{
+    color: #fdd135;
+}
+
+.section-1{
+    padding-bottom: 122px;
+}
+
+.section-name{
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-size: 40px;
+    color: #222222;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-sub-name{
+    font-family: "Playfair Display"; 
+    font-style: italic;
+    font-size: 16px;
+    color: #777777;
+    text-align: center;
+    margin-bottom: 76px;
+}
+
+.featurest-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.featurest-list-item{
+    width: 285px;
+}
+
+.featurest-list-item::before{
+    content: " ";
+    display: block;
+    box-sizing: border-box;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    border: 3px solid #fed136;
+    background-repeat: no-repeat; 
+    background-position: center;
+    margin: 0 auto;
+    margin-bottom: 6px;
+}
+
+.icon-basket::before{ background-image: url(../icon/Icon-Basket.png)}
+.icon-laptop::before{ background-image: url(../icon/Icon-Laptop.png)}
+.icon-locked::before{ background-image: url(../icon/Icon-Locked.png)}
+
+.featurest-list-item-name{
+    display: block;
+    font-family:"Montserrat";
+    font-size: 18px;
+    color: #222222;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+
+.featurest-list-item-sub-name{
+   font-size: 14px;
+    color: #777777;
+    font-family: "Roboto Slab";
+    text-align: center;
+    font-weight: 300;
+}
+
+.section-2{
+    background-color: #222;
+    background-image: url(../img/map-image.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.content-section-2{
+    height: 670px;
+    padding-top: 100px;
+}
+
+.section-2 .section-name{
+    color: #fff;
+}
+
+/*form*/
+.form-s{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.form-s1{
+    max-width: 454px;
+}
+
+.input-text{
+    margin: 0;padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #bbbbbb;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    padding: 20px 0 20px 20px;
+    margin-bottom: 28px;
+    border-radius: 5px;
+}
+
+.input-textarea{
+    height: 236px;
+}
+
+.form-s2-button{
+    display: block;
+    margin: 0 auto;
+    background-color: #fed136;
+    text-transform: uppercase;
+    padding: 20px 46px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-align: center;
+}
+
+.input-text:valid{
+    border: 2px solid #00ff00;
+}
+
+.input-text:invalid{
+    border: 2px solid #ff0000;
+}
