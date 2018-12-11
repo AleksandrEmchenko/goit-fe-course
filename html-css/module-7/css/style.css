@@ -55,6 +55,7 @@ html {
     display: block;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     width: 484px;
     justify-content: space-between;
     align-items: flex-end;
@@ -110,7 +111,6 @@ html {
 .featurest-list-item::before{
     content: " ";
     display: block;
-    box-sizing: border-box;
     width: 68px;
     height: 68px;
     border-radius: 50%;
@@ -149,10 +149,11 @@ html {
     background-image: url(../img/map-image.png);
     background-repeat: no-repeat;
     background-position: right;
+    padding-bottom: 115px;
 }
 
 .content-section-2{
-    height: 670px;
+    /* height: 670px; */
     padding-top: 100px;
 }
 
@@ -164,28 +165,33 @@ html {
 .form-s{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+    
 }
 .form-s1{
-    max-width: 454px;
+    width: 456px;
+    margin-bottom: 28px;
 }
 
 .input-text{
     margin: 0;padding: 0;
     width: 100%;
-    box-sizing: border-box;
     font-size: 14px;
     color: #bbbbbb;
     font-family: "Montserrat";
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: 20px 0 20px 20px;
     margin-bottom: 28px;
     border-radius: 5px;
 }
+.input-text:last-child{
+    margin-bottom: 0;
+}
+
 
 .input-textarea{
-    height: 236px;
+    min-height: 236px;
 }
 
 .form-s2-button{

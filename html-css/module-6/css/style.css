@@ -234,7 +234,7 @@ a::after {
     transition-property: opacity;
     z-index: 1;
     box-shadow: 10px 10px #95e1d3;
-    transition: pasity 200ms linear, trznsform 200ms linear;
+    transition: opacity 200ms linear, transform 200ms linear;
 }
 
 .card-img{
