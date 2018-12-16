@@ -20,11 +20,12 @@
 }
 
 .navigation {
-    padding: 20px;
+    padding-top: 20px;
     
 }
 .logo{
     display: none;
+    text-decoration: none;
     
 }
 .logo a{
@@ -128,40 +129,61 @@
 .partner{
     /* display: flex;
     flex-direction: column; */
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    
 }
-
+.partner:last-child{
+    margin-bottom: 0;
+}
+.image {
+    margin-bottom: 24px;
+}
 .partner-photo{
+    position: relative;
     width: 121px;
     height: 121px;
     margin: 0 auto;
-    position: relative;
     display: block;
-    background-repeat: no-repeat;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
+    
 }
+/**/
 
-.pph-1{
+.partner-photo::after {
+    content: "";
+    display: block;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    right: 0;
+    bottom: 0;
+}
+/**/
+.pph-1::after {
     background: #ff4e50;
     background-image: url(../icon/icon-tv.png);
 }
 
-.pph-2{
+.pph-2::after {
     background: #ffa507;
     background-image: url(../icon/icon-chem.png);
 }
 
-.pph-3{
+.pph-3::after{
     background: #1cd7ad;
     background-image: url(../icon/icon-coffe.png);
 }
 
-.pph-4{
+.pph-4::after {
     background: #4e73db;
     background-image: url(../icon/icon-tel.png);
 }
 
-.pph{
+/* .pph{
     position: absolute;
     width: 41px;
     height: 41px;
@@ -171,7 +193,7 @@
     border-radius: 50%;
     right: 0;
     bottom: 0;
-}
+} */
 
 
 .partner-name{
@@ -185,7 +207,7 @@
 }
 
 .partner-info{
-    display: block;
+    /* display: block; */
     width: 221px;
     font-size: 14px;
     color: #666666;
