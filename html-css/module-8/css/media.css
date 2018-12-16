@@ -1,0 +1,112 @@
+@media (min-width: 321px) and (max-width: 768px){
+    .wrapper{
+        width: 768px;
+    }
+    .hdr{
+        width: 768px;
+        height: 700px;
+        background-image: url(../img/bg-image-tablet.jpg);
+        
+    }
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+       
+        
+    }
+    .logo{
+        display: block;
+        font-size: 20px;
+        color: #ffffff;
+        font-family: "Montserrat";
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    .header-name{
+        width: 505px;
+    }
+
+    .header-name-1{
+        display: none;
+    }
+
+    .header-name-2{
+        font-size: 52px;
+    }
+
+    .header-name-3{
+        font-size: 24px;
+    }
+
+    .header-name-4{
+        width: 226px;
+    }
+    .name-section{
+        width: 100%;
+    }
+    .content-section{
+        width: 492px;
+        height: 544px;
+        /* margin: 0 auto; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1440px){
+    .wrapper{
+        width: 940px;
+        margin: 0 auto;
+    }
+    .hdr{
+        width: 1440px;
+        height: 700px;
+        background-image: url(../img/bg-image-desktop.jpg);
+    }
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+       
+        
+    }
+    .logo{
+        display: block;
+        font-size: 20px;
+        color: #ffffff;
+        font-family: "Montserrat";
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    
+
+    .header-name-1{
+        display: none;
+    }
+       
+    .name-section{
+        width: 100%;
+    }
+    
+    .content-section{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-between;
+    }
+    .content-section li:nth-child(2){
+        order: 1;
+    }
+    .content-section li:nth-child(3){
+        order: 0;
+    }
+    .content-section li:nth-child(4){
+        order: 2;
+    }
+}
