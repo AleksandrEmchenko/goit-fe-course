@@ -13,7 +13,7 @@
 .hdr{
     width: 320px;
     margin: 0 auto;
-    position: relative;
+    /* position: relative; */
     min-height: 540px;
     background-image: url(../img/bg-image.jpg);
     background-repeat: no-repeat;
@@ -22,7 +22,9 @@
 }
 
 .navigation {
+    display: block;
     padding-top: 20px;
+    margin-bottom: 70px;
     
 }
 .logo{
@@ -62,14 +64,14 @@
     display: block;
     width: 300px;
     margin: 0 auto;
-    position: absolute;
+    /* position: absolute; */
     color: #ffffff;
     font-family: "Montserrat";
     font-weight: bold;
     text-align: center;
-    top: 50%;
+    /* top: 50%; */
     left: 50%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
 }
 
 .header-name-1 .logo{
@@ -111,9 +113,11 @@
 .content{
     /* padding: 66px 20px 56px 20px; */
     margin: 0 auto;
+    /* padding-bottom: 56px; */
 }
 .main-section{
     padding-top: 66px;
+    
 }
 .name-section{
     width: 280px;
@@ -129,6 +133,7 @@
 .content-section{
     list-style: none;
     margin: 0 auto;
+    margin-bottom: 30px;
     
 }
 
