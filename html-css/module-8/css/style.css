@@ -7,36 +7,40 @@
     width: 320px;
     margin: 0 auto;
     padding: 0 15px;
-
 }
 
 .hdr{
-    width: 320px;
-    margin: 0 auto;
-    /* position: relative; */
     min-height: 540px;
     background-image: url(../img/bg-image.jpg);
     background-repeat: no-repeat;
     background-position: center; 
-    
 }
 
 .navigation {
     display: block;
     padding-top: 20px;
-    margin-bottom: 70px;
-    
+    margin-bottom: 106px;
+    transform: translateY(-50px);
 }
+
 .logo{
-    display: none;
+    display: block;
     text-decoration: none;
-    
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    transform: translateY(200px);
+    text-align: center;
 }
+
 .logo a{
     display: block;
     text-decoration: none;
     color: #fff;
+    font-size: 20px;
 }
+
 .menu{
     display: flex;
     justify-content: center;
@@ -62,22 +66,11 @@
 
 .header-name{
     display: block;
-    width: 300px;
     margin: 0 auto;
-    /* position: absolute; */
     color: #ffffff;
     font-family: "Montserrat";
     font-weight: bold;
     text-align: center;
-    /* top: 50%; */
-    left: 50%;
-    /* transform: translate(-50%, -50%); */
-}
-
-.header-name-1 .logo{
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-bottom: 28px;
 }
 
 .header-name-2{
@@ -103,6 +96,7 @@
     font-weight: bold;
     line-height: 40px;
     border-radius: 20px;
+    padding: 10px 40px;
     border: 2px solid transparent;
 }
 
@@ -110,38 +104,28 @@
     border: 2px solid #fff;
 }
 
-.content{
-    /* padding: 66px 20px 56px 20px; */
-    margin: 0 auto;
-    /* padding-bottom: 56px; */
-}
 .main-section{
-    padding-top: 66px;
+    padding: 66px 0px 50px 0px;
     
 }
 .name-section{
-    width: 280px;
     font-size: 22px;
     color: #333333;
     font-family: "Montserrat";
     font-weight: bold;
     text-align: center;
-    margin: 0 auto;
     margin-bottom: 22px;
 }
 
 .content-section{
     list-style: none;
-    margin: 0 auto;
     margin-bottom: 30px;
-    
 }
 
 
 /*карточка*/
 .partner-list{
     margin-bottom: 30px;
-    
 }
 
 .partner-list:last-child{
@@ -149,13 +133,11 @@
 }
 
 .partner-list-content{
-    width: 121px;
-    height: 121px;
+    position: relative;
+    /* width: 121px;
     margin: 0 auto;
     display: block;
-    margin-bottom: 24px;
-    position: relative;
-    
+    margin-bottom: 24px; */
 }
 
 .partner-list-content::after {
@@ -211,7 +193,6 @@
 }
 
 .partner-info{
-    /* display: block; */
     width: 221px;
     font-size: 14px;
     color: #666666;
