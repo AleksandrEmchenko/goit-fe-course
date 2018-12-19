@@ -17,10 +17,9 @@
 }
 
 .navigation {
-    display: block;
     padding-top: 20px;
-    margin-bottom: 106px;
-    transform: translateY(-50px);
+    margin-bottom: 30px;
+    
 }
 
 .logo{
@@ -29,9 +28,11 @@
     color: #fff;
     font-size: 20px;
     text-transform: uppercase;
-    margin-bottom: 28px;
-    transform: translateY(200px);
     text-align: center;
+    padding-top: 102px;
+    letter-spacing: 1px;
+    font-family: "Montserrat";
+    font-weight: bold;
 }
 
 .logo a{
@@ -65,7 +66,7 @@
 }
 
 .header-name{
-    display: block;
+    /* display: block; */
     margin: 0 auto;
     color: #ffffff;
     font-family: "Montserrat";
@@ -122,8 +123,16 @@
     margin-bottom: 30px;
 }
 
-
 /*карточка*/
+
+.partner-photo{
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
 .partner-list{
     margin-bottom: 30px;
 }
@@ -134,10 +143,6 @@
 
 .partner-list-content{
     position: relative;
-    /* width: 121px;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 24px; */
 }
 
 .partner-list-content::after {
@@ -150,8 +155,8 @@
     background-repeat: no-repeat;
     border: 4px solid #fff;
     border-radius: 50%;
-    right: 0;
     bottom: 0;
+    left: 54%;
 }
 
 .partner-list-content.icon-1::after {
@@ -159,6 +164,7 @@
     background-image: url(../icon/icon-tv.png);
     background-position: center;
     background-repeat: no-repeat;
+    display: block;
 }
 
 .partner-list-content.icon-2::after{
@@ -193,7 +199,6 @@
 }
 
 .partner-info{
-    width: 221px;
     font-size: 14px;
     color: #666666;
     font-family: "Roboto";
@@ -220,5 +225,4 @@
 
 .section-button:hover{
     border: 2px solid #333;
-    
 }
