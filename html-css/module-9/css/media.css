@@ -1,0 +1,132 @@
+@media (min-width: 768px){
+    .wrapper{
+        width: 768px;
+        margin: 0 auto;
+        padding: 0 8px;
+    }
+
+    .hdr{
+        min-height: 700px;
+        background-image: url(../img/bg-image-tablet.jpg);
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-top: 30px;
+        margin-bottom: 100px;
+    }
+
+    .logo{
+        font-size: 20px;
+        color: #ffffff;
+        font-family: "Montserrat";
+        font-weight: bold;
+        padding-top: 16px;
+    }
+
+    /* .menu{
+        margin-bottom: 76px;
+    } */
+
+    .header-name{
+        max-width: 505px;
+    }
+
+    .header-name-2{
+        font-size: 52px;
+        margin-bottom: 14px;
+    }
+
+    .header-name-3{
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .header-name-4{
+        padding: 10px 36px;
+    }
+
+/*содержимое*/
+
+    .content{
+        padding: 0 15px;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+    
+    .name-section{
+        margin-bottom: 48px;
+    }
+       
+    .content-section{
+        width: 492px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .partner-list{
+        width: 236px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 940px){
+    .wrapper{
+        width: 940px;
+    }
+
+    .hdr{
+        background-image: url(../img/bg-image-desktop.jpg);
+    }
+    .navigation {
+        margin-bottom: 60px;
+       
+        
+    }
+    .logo{
+        display: block;
+        font-size: 20px;
+        color: #ffffff;
+        font-family: "Montserrat";
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    
+    .header-name-2{
+        font-size: 52px;
+        margin-bottom: 20px;
+    }
+
+    .header-name-3{
+        font-size: 24px;
+        margin-bottom: 34px;
+    } 
+
+    .content{
+        padding-bottom: 40px;
+        
+    }
+
+    .name-section{
+        margin-bottom: 32px;
+    }
+
+    .content-section{
+        width: 940px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .partner-list{
+        width: 220px;
+        margin-bottom: 0;
+    }
+    
+}
