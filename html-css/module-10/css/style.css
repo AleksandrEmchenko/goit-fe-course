@@ -106,13 +106,13 @@ body{
     transform: scaleX(1);
 }
 
-.navigation__link svg{
+.navigation__item svg{
     width: 18px;
     height: 18px;
     fill: #fff;
 }
 
-.navigation__link svg:hover{
+.navigation__item svg:hover{
     fill: #fce38a;
 }
 
