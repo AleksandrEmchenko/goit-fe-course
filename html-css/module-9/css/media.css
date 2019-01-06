@@ -1,33 +1,17 @@
 @media (min-width: 768px){
-    .wrapper{
+    .container{
         width: 768px;
         margin: 0 auto;
         padding: 0 8px;
     }
 
-    .hdr{
+    .header{
         min-height: 700px;
         background-image: url(../img/bg-image-tablet.jpg);
     }
 
-    .navigation {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        padding-top: 10px;
-        margin-bottom: 64px;
-    }
-
-    .logo{
-        font-size: 20px;
-        color: #ffffff;
-        font-family: "Montserrat";
-        font-weight: bold;
-        padding-top: 16px;
-    }
-
-    .menu{
-        margin-bottom: 76px;
+    .nav{
+        margin-bottom: 40px;
     }
 
     .header-name{
@@ -61,7 +45,6 @@
     }
        
     .content-section{
-        /* width: 492px; */
         margin: 0 auto;
         margin-bottom: 40px;
         display: flex;
@@ -71,34 +54,23 @@
     }
 
     .partner-list{
-        /* width: 236px; */
         margin-bottom: 60px;
     }
 }
 
 @media (min-width: 992px){
-    .wrapper{
+    .container{
         width: 992px;
-        
     }
 
-    .hdr{
+    .header{
         background-image: url(../img/bg-image-desktop.jpg);
     }
-    .navigation {
+
+    .nav {
         margin-bottom: 60px;
-       
-        
     }
-    .logo{
-        display: block;
-        font-size: 20px;
-        color: #ffffff;
-        font-family: "Montserrat";
-        font-weight: bold;
-        margin-bottom: 0;
-    }
-    
+   
     .header-name-2{
         font-size: 52px;
         margin-bottom: 20px;
@@ -129,5 +101,4 @@
         width: 220px;
         margin-bottom: 0;
     }
-    
 }
