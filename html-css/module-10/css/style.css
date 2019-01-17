@@ -17,12 +17,22 @@ body{
 }
 
 /* start header*/
-
+.first-screen{
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    
+    /* opacity: 0.5; */
+    
+}
 .hdr{
-    width: 1920px;
+    /* width: 1920px; */
     position: relative;
     margin: 0 auto;
     margin-bottom: 40px;
+    height: 1000px;
 }
 
 .hdr__img{
@@ -60,6 +70,11 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
+
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 136, 137, 0.7)), to(rgba(230, 209, 130, 0.7)));
+    background-image: -webkit-linear-gradient(top, rgba(238, 136, 137, 0.7), rgba(230, 209, 130, 0.7));
+    background-image: -o-linear-gradient(top, rgba(238, 136, 137, 0.7), rgba(230, 209, 130, 0.7));
+    background-image: linear-gradient(to bottom, rgba(238, 136, 137, 0.7), rgba(230, 209, 130, 0.7));
 }
 
 .link{
@@ -153,10 +168,10 @@ body{
     fill: #fce38a;
 }
 
-.hdr:hover .hdr__overlay{
+/* .hdr:hover .hdr__overlay{
     opacity: 1;
 
-}
+} */
 .hdr-head{
     position: absolute;
     display: block;
@@ -169,14 +184,14 @@ body{
     text-align: center;
 }
 
-.title-1{
+.hdr-head__title{
     font-size: 72px;
     font-family: "Kaushan Script";
     margin: 0;padding: 0;
     margin-bottom: 34px;
 }
 
-.title-2{
+.hdr-head__subtitle{
     font-size: 150px;
     line-height: 140px;
     font-family: "Montserrat";
@@ -186,13 +201,13 @@ body{
     margin-bottom: 108px;
 }
 
-.title-3{
+.hdr-head__link{
     display: inline-block;
     padding: 10px 15px;
     border: 3px solid #fff;
 }
 
-.title-3:hover{
+.hdr-head__link:hover{
     color: #fce38a;
     border: 3px solid #fce38a;
 }
@@ -291,8 +306,7 @@ body{
 }
 
 .content-item__block-img{
-    top: 0;
-    left: 50px;
+    
     background-repeat: no-repeat;
 }
 
@@ -314,14 +328,14 @@ body{
 }
 
 .content-item__text{
-    display: block;
+    
     font-size: 15px;
     line-height: 24px;
     color: #999999;
     font-family: "Roboto";
     margin: 0;
     padding: 0;
-    text-align: center;
+    
 }
 
 /*section 2*/
@@ -336,7 +350,7 @@ body{
 }
 
 /* start gallery*/
-.gallery{
+.gallery__list{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -415,7 +429,7 @@ body{
             justify-content: space-between;
 }
 
-.social-bar-list-actions__link{
+.gallery__link{
     display: block;
     margin: 0;padding: 0;
     background-color: #fce38a;
@@ -428,7 +442,7 @@ body{
     transition: background-color 0.3s linear;
 }
 
-.social-bar-list-actions__items:hover .social-bar-list-actions__link:hover{
+.gallery__item:hover .gallery__link:hover{
     background-color: #95e1d3;
 }
 
@@ -464,7 +478,7 @@ body{
 /* end gallery*/
 
 /* start footer*/
-.footer1{
+.footer{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
