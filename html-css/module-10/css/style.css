@@ -31,7 +31,7 @@ body{
     /* width: 1920px; */
     position: relative;
     margin: 0 auto;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     height: 1000px;
 }
 
@@ -442,17 +442,17 @@ body{
     transition: background-color 0.3s linear;
 }
 
-.gallery__item:hover .gallery__link:hover{
+.gallery__item:hover .gallery__link{
     background-color: #95e1d3;
 }
 
-.social-bar-list-actions svg{
+.social-bar-list-actions .svg-icon{
     width: 26px;
     height: 26px;
     fill: #f38181;
 }
 
-.social-bar-list-actions svg:hover{
+.gallery__link:hover .svg-icon:hover{
     fill: #fff;
 }
 
