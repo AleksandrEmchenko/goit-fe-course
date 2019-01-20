@@ -31,7 +31,7 @@ body{
     /* width: 1920px; */
     position: relative;
     margin: 0 auto;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     height: 1000px;
 }
 
@@ -228,6 +228,7 @@ body{
     overflow: hidden;
 }
 
+
 .main-section__name{
     font-size: 24px;
     font-family: "Kaushan Script";
@@ -259,7 +260,8 @@ body{
 
 /*section 1*/
 .main-section{
-    padding-bottom: 96px;
+    padding-top: 75px;
+    padding-bottom: 12px;
 }
 
 .main-section__content{
@@ -350,6 +352,9 @@ body{
 }
 
 /* start gallery*/
+.gallery{
+    margin-bottom: 70px;
+}
 .gallery__list{
     display: -webkit-box;
     display: -ms-flexbox;
