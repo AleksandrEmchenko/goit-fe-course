@@ -457,7 +457,7 @@ body{
     fill: #f38181;
 }
 
-.gallery__link:hover .svg-icon:hover{
+.gallery__link:hover {
     fill: #fff;
 }
 
