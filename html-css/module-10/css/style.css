@@ -460,6 +460,9 @@ body{
 .gallery__link:hover {
     fill: #fff;
 }
+.svg-icon:hover{
+    fill:  #f38181;
+}
 
 .gallery__card-name{
     text-transform: uppercase;
